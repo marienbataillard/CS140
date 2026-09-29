@@ -1,8 +1,14 @@
  p {
-    color: green;
+    color: rgb(16, 9, 217);
 }
+ul { color:rgb(38, 16, 200)}
+strong {color: rgb(220, 20, 60);}
 
  main h1 { 
     font-size: xx-small;
     font-weight: normal;
+};
+
+body header h1 {
+    color: deeppink;
 };
