@@ -1,19 +1,17 @@
 main p {
     color:hotpink;
-    font-weight: bold;
 }
 p {
-    color: rgb(255, 119, 0);
+    color: rgb(10, 2, 11);
 }
 h1 {
-    color: rgb(5, 9, 61);
+    color: rgb(3, 10, 7);
 }
 nav a {
     color: rgb(158, 22, 147);
 }
-#fourthq {
-    color: rgb(0, 0, 0);
+
+#Title {
+    color: crimson;
 }
-.secq {
-    color: black;
-}
+
