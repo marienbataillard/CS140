@@ -1,0 +1,29 @@
+body {
+    font-family: Serif, sans-serif, Helvetica, Arial, Times New Roman, Georgia, Verdana, Tahoma; 
+    background-color: #A8416e;
+}
+
+.Title {
+    color: #ffffff;
+}
+
+main {
+    color: rgb(255, 245, 249);
+}
+
+footer {
+    color: #680133;
+}
+
+nav {
+    color: #e2a1bd;
+}
+
+a {
+    color: #95b948;
+}
+
+span {
+    color: #dbf3ac;
+}
+
