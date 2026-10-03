@@ -1,14 +1,12 @@
 body {
     font-family: Serif, sans-serif, Helvetica, Arial, Times New Roman, Georgia, Verdana, Tahoma; 
     background-color: #A8416e;
+    font-size: large;
+    color: azure;
 }
 
 .Title {
     color: #ccff79;
-}
-
-main {
-    color: rgb(255, 245, 249);
 }
 
 footer {
