@@ -4,7 +4,7 @@ body {
 }
 
 .Title {
-    color: #ffffff;
+    color: #ccff79;
 }
 
 main {
@@ -24,6 +24,21 @@ a {
 }
 
 span {
-    color: #dbf3ac;
+    color: #ccff79;
 }
 
+#oldie {
+    color: #ccff79;
+}
+
+#mainstream {
+    color: #ccff79;
+}
+
+.list {
+    color: #ccff79;
+}
+
+.listt {
+    color: #95b948;
+}
