@@ -1,0 +1,9 @@
+{
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.quickSuggestions": {
+        
+        "other": "offWhenInlineCompletions",
+        "comments": "off",
+        "strings": "off"
+    }
+}
