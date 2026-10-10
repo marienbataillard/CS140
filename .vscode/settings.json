@@ -1,9 +1,15 @@
 {
-    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.inlineSuggest.suppressSuggestions": false,
     "editor.quickSuggestions": {
         
         "other": "offWhenInlineCompletions",
         "comments": "off",
         "strings": "off"
-    }
+    },
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.showToolbar": "never",
+    "editor.inlineSuggest.suppressInSnippetMode": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false
 }
