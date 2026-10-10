@@ -7,6 +7,13 @@ body {
     color: white;
 }
 
+main {
+    background-image: url(cook.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
 header { 
     background-color: rgb(228, 212, 189);
     
@@ -14,4 +21,13 @@ header {
 
 .navs {
     color: rgb(15, 148, 209);
+}
+
+#on {
+    color: white
+}
+
+.lists {
+    list-style-image: url(hibiscus.png);
+    list-style-position: inside;
 }
