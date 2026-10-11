@@ -8,10 +8,10 @@ body {
 }
 
 main {
-    background-image: url(cook.png);
+    background-image: url(stars.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: center;
+    background-position-y: bottom;
 }
 
 header { 
