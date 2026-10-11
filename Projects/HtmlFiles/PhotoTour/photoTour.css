@@ -8,10 +8,10 @@ body {
 }
 
 main {
-    background-image: url(stars.png);
+    background-image: url(stars_quarter_size.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: top;
 }
 
 header { 
