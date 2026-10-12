@@ -1,0 +1,42 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: scroll;
+}
+
+* {
+    
+    margin: 50;
+
+}
+
+.pOne {
+    height: 100px;
+    padding: 20px;
+    margin: 50px;
+    border-width: 10px;
+    border-color: blueviolet;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+}
+
+.p2 {
+    margin-top: 10px;
+    border: 5px solid magenta;
+    padding: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.p3 {
+    border: 5px dashed pink;
+    margin: 30px;
+    padding: 15px;
+}
+
+.p4 {
+    border: thin solid rgb(9, 255, 9);
+    padding: 50px 10px;
+    margin: 10px;
+
+}
