@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: rgb(255, 228, 187);
+     color: white;
+     align-content: center;
+     text-align: center;
+}
+* {
+    outline: solid thin red;
+   
+}
+marquee {
+    color: rgb(252, 252, 252);
+}
+
+a {
+    color: white;
+    display: block pink ;
+}
+
+mark {
+    background-color: darkgray;
+}
+.kidfig {
+    border: 2px solid greenyellow;
+    width: 250px;
+    overflow: scroll;
+    float: right;
+}
+
+.kidfig img {
+    width: 100%;
+}
+
+.enforcer {
+    clear: both
+}
+
+#relative {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+#absolute {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+#fixed {
+    position: fixed;
+    top: 0px;
+    left: 40px;
+
+}
