@@ -1,0 +1,18 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px gray;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}

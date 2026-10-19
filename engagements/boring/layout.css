@@ -1,7 +1,14 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 200;
     background-color: blanchedalmond;
     text-align: center;
+    align-items: center;
+}
+
+main {
+    margin: 10px;
 }
 
 header h1 { 
@@ -12,19 +19,36 @@ header h1 {
 #wrapper {
     background-color: white;
     border-radius: 10px;
-    width: 400px;
-    margin: 0 auto; 
+    width: 600px;
+    margin: 30px; 
     box-shadow: inset;
+}
+
+#kids { 
+    width: 300px;
+}
+figure {
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+figure figcaption {
+    font-style: italic;
+    line-height: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 nav {
     margin: 20px;
 }
+
 nav a {
     display: inline;
     padding: 10px 10px;
     border-radius: 10px;
-    background-color: pink;
+    background-color: aquamarine;
     color: black;
     margin: 10px;
     border: 10px;
@@ -32,17 +56,19 @@ nav a {
 
 nav a:hover {
     background-color: black;
-    color: pink;
+    color: aquamarine;
 }
 
 #nothing {
     border: thin solid black;
     border-radius: 10px;
-    background-color: black;
-    color: pink;
+    background-color: rgb(15, 141, 99);
+    color: black;
+    text-shadow: 10px;
+    height: 60px;
 }
 
 #nothing:hover {
-    background-color: pink;
-    color: black
+    background-color:black;
+    color: rgb(15, 141, 99);
 }
