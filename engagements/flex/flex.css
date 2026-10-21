@@ -1,0 +1,50 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: burlywood;
+    color: rgb(204, 239, 255);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+nav a{
+    color: maroon;
+    display: block;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-bottom: 3px solid burlywood;
+    border-radius: 10px;
+}
+
+.card {
+    border: 5px solid white;
+    padding: 2pc;
+    text-align: center;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: maroon;
+}
+
+.Question { 
+    color: maroon;
+}
+
+.card:hover {
+    color: maroon;
+    background-color: whitesmoke;
+    border: 5px solid maroon;
+}
+
+.parent {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
