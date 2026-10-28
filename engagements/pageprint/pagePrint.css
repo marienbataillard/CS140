@@ -11,7 +11,11 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+main {
+    width: 100%;
+}
+
+
 header {
     background-color: #721c1c;
     color: white;
@@ -19,7 +23,7 @@ header {
     padding: 20px;
 }
 
-/* Navigation bar: Flexbox */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -41,21 +45,23 @@ nav a:hover {
     background-color: #b85252;
 }
 
-/* Sidebar and main content: Flexbox */
+
 .page-layout {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
+
 }
 
-/* Sidebar */
+
 .sidebar {
     flex: 0 0 200px;
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    width: 100%;
 }
 
 .sidebar a {
@@ -88,6 +94,7 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    width: 95%;
 }
 
 .card img {
@@ -125,10 +132,10 @@ main {
 }
 
 .button:hover {
-    background-color: #477c68;
+    background-color: #b85252;
 }
 
-/* Reflection questions */
+
 .questions {
     background-color: white;
     padding: 20px;
@@ -145,7 +152,7 @@ footer {
     color: white;
 }
 
-/* Responsive layout for smaller screens */
+
 @media screen and (max-width: 900px) {
     .card-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -154,7 +161,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .page-layout {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .sidebar {
@@ -168,10 +175,15 @@ footer {
 
     nav {
         flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: 1px solid #999;
     }
 }
 
-/* Print styles */
+
 @media print {
     body {
         background-color: white;
