@@ -12,12 +12,11 @@
     main {
         width: 100%;
         flex-direction: column;
-        order: 1;
     }
 
     aside {
         width: 100%;
-        order: 2;
+    
     }
 
     article {

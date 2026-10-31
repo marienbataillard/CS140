@@ -52,11 +52,8 @@ nav a:hover {
     align-items: flex-start;
 }
 
-/* Sidebar */
-
 aside {
     flex: 0 0 25%;
-    background-color: ede8e1;
     padding: 20px;
     border: 1px solid #433f46;
     
@@ -72,7 +69,6 @@ aside img {
     height: auto;
 }
 
-/* Figures */
 
 figure {
     margin: 0 0 15px;
@@ -118,7 +114,6 @@ article h2 {
 article p {
     line-height: 1.7;
 }
-
 
 footer {
     background-color: #ede8e1;
