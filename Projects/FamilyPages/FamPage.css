@@ -1,0 +1,54 @@
+@media screen and (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    article {
+        width: 100%;
+    }
+
+}
+
+
+@media print {
+
+    nav {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    header,
+    footer {
+        background-color: white;
+        color: black;
+    }
+
+    article,
+    aside {
+        background-color: white;
+        color: black;
+        border: 1px solid #999;
+    }
+
+}
