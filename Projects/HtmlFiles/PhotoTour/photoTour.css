@@ -1,0 +1,33 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(creamTextBg.jpg);
+    background-color: blanchedalmond;
+    background-repeat: repeat;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-image: url(stars_quarter_size.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+header { 
+    background-color: rgb(228, 212, 189);
+    
+}
+
+.navs {
+    color: rgb(15, 148, 209);
+}
+
+#on {
+    color: white
+}
+
+.lists {
+    list-style-image: url(hibiscus.png);
+    list-style-position: inside;
+}

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+
+header {
+    background-color: #721c1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    background-color: #721c1c;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #b85252;
+}
+
+
+.page-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+.sidebar {
+    flex: 0 0 200px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: #721c1c;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    flex: 1;
+}
+
+.button {
+    display: inline-block;
+    background-color: #721c1c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #b85252;
+}
+
+
+.questions {
+    background-color: white;
+    padding: 20px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
