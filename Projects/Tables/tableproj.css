@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*background-image: radial-gradient(rgb(46,26,71), rgb(52, 21, 90), black 60%);*/
+  /*  background-color: rgb(115, 75, 164);
+    color: white;*/
+}
+/* BODY */
+/*
+header {
+    color: white;
+    text-align: center;
+    text-shadow: #433f46;
+    font-weight: bolder;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(115, 75, 164);
+}
+*/
+
+/*Aside*/
+/*aside {
+    flex: 25 0 0;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+footer {
+    
+    color: #f8f6f9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+*/
+
+/* WATCHLIST TABLE*/
+.tablediv {
+    padding: 10px;
+    margin: 5px;
+}
+
+#watchlist {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    background-color: rgb(46, 26, 71);
+    color: white;
+}
+
+#watchlist th {
+    border-radius: 8px;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: black;
+}
+
+#watchlist td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-collapse: collapse;
+} 
+
+#watchlist th {
+    background-color: rgb(170, 144, 201);
+    color: white;
+}
+
+#watchlist td {
+    vertical-align: middle;
+}
+
+#watchlist tbody tr:nth-child(even) {
+    background-color: rgb(115, 75, 164);
+}
+
+caption {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgb(115, 75, 164);
+    caption-side: top;
+}
+
+caption h2 {
+    color: white;
+}
+
+.tablediv {
+    overflow-x: auto;
+}

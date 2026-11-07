@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tables.css">
+    <title>Class Schedule</title>
+</head>
+<body>
+    <Header>
+        <h1>My Class Schedule</h1>
+    </Header>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a> 
+    </nav>
+    <main>
+        <div class="tablediv">
+            <table id="schedule">
+                <caption><h2>
+                    Class Schedule
+                </h2></caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Department</th>
+                        <th scope="col">Course Number</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Credits</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th colspan="6" scope="col">2026 Fall Semester</th>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Defense Against the Dark Arts</td>
+                        <td>DADA-301</td>
+                        <td>Counter-Curses</td>
+                        <td>Stake Center Chapel</td>
+                        <td>9AM</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row"td>Potions</td>
+                        <td>POT-202</td>
+                        <td>Advance Concoctions & Antidotes</td>
+                        <td>Science Building</td>
+                        <td>10AM</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Herbology</td>
+                        <td>HERB-404</td>
+                        <td>Cenomous Tentacula</td>
+                        <td>Science Building</td>
+                        <td>2PM</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Careof Magical Creatures</td>
+                        <td>COMC-302</td>
+                        <td>Hoppogriff Handling</td>
+                        <td>PCC</td>
+                        <td>5PM</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th colspan="6" scope="row">2027 Winter Semester</th>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Defense Against the Dark Arts</td>
+                        <td>DADA-432</td>
+                        <td>Defense Dueling</td>
+                        <td>Stake Center Chapel</td>
+                        <td>9AM</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" scope="row">Potions</td>
+                        <td>POT-302</td>
+                        <td>Advance Concoctions & Antidotes</td>
+                        <td>Science Building</td>
+                        <td>10AM</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>POT-444</td>
+                        <td>Poisons</td>
+                        <td>Science Building</td>
+                        <td>10AM</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td scope="row">Careof Magical Creatures</td>
+                        <td>COMC-401</td>
+                        <td>Dragon Taming</td>
+                        <td>PCC</td>
+                        <td>5PM</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="5" scope="row">
+                            Total Credits:
+                        </th>
+                        <td>
+                            24
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+
+        <div>
+            <h2><em>Questions</em></h2>
+
+            <h3>Why don't we use the border attribute?</h3>
+                <p>If we have other tables in our site the attribute may leak and effect those other tables</p>
+
+            <br>
+
+            <h3>What is the easiest way to color every other row a different color?</h3>
+                <p>pseudo class tag..</p>
+        
+            <br>
+
+            <h3>What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.</h3>
+                <p>It declares where we want there to be color, we place a number for color in a specefic cell, if we want it in odd or even that will color the whole role or do something to the rows in odd or even.</p>
+           
+        </div>
+        
+
+
+    </main>
+    <footer>
+        <p>&copy;2026 Author</p>
+        Inspired by Harry Potter Series.
+    </footer>
+</body>
+</html>z
