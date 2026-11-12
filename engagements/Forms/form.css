@@ -6,7 +6,7 @@ body {
 }
 
 form {
-    width: 500px;
+    width: 440px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -18,7 +18,7 @@ fieldset{
     border: 1px solid beige;
     border-radius: 8px;
     margin: 20px 0;
-    padding: 20px;
+    padding: 15px;
 }
 
 legend {
@@ -43,6 +43,12 @@ legend {
     text-align: right;
 }
 
+#radio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
 .comment-row label{
     width: 150px;
     flex-shrink: 0;
@@ -60,7 +66,7 @@ legend {
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: magenta;
+    border: 2px solid magenta;
     background-color: #fff2a8;
 }
 
