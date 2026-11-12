@@ -82,7 +82,7 @@ input:focus, select:focus, textarea:focus {
         text-align: left;
     }
 
-    .form-row input, .form-row select, .comment-row textarea, .check-row checkbox, .check-row radio {
+    .form-row input, .form-row select, .comment-row textarea{
         width: 100%;
         box-sizing: border-box;
     }
