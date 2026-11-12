@@ -13,59 +13,79 @@
     <main>
         <form action="formprocessing.html" method="post">
             <fieldset>
-                <fieldset>
-                    <legend>Account</legend>
-                    <div class="form-row">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-                    </div>
+                <legend>Account</legend>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="pass" id="password">
+                </div>
 
-                    <div class="form-row">
-                        <label for="bdate">Birthday:</label>
-                        <input type="date" name="bdate" id="bdate">
-                    </div>
-                    
-                    <div class="form-row">
-                        <label for="password">Password:</label>
-                        <input type="password" name="pass" id="password">
-                    </div>
+            </fieldset>
 
-                    <div class="form-row">
-                        <label for="State">State:</label>
-                        <select name="state" id="state">
-                            <option value="blank">---------</option>
-                            <option value="CA">California</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="UT">Utah</option>
-                        </select>
-                    </div>
-                </fieldset>
+            <fieldset>
+                <legend>About You</legend>
 
-                <fieldset>
-                    <legend>About You</legend>
-                    <div class="check-row">
-                        <div class="spacer"> </div>
-                        <label><input type="checkbox" name="Yougood">You is good?</label>
-                    </div>
-
-                    <div class="check-row">
-                        <div class="spacer"></div>
-                        <label><input type="radio" name="Male">Male</label>
-                        <label><input type="radio" name="Female">Female</label>
-                    </div>
-
-                    <div class="check-row">
-                        <div class="spacer"></div>
-                        <label>Comment</label>
-                        <textarea name="comment" id="comment"></textarea>
-                    </div>
-                </fieldset>
+                <div class="form-row">
+                    <label for="bdate">Birthday:</label>
+                    <input type="date" name="bdate" id="bdate">
+                </div>
+                
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---------</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
 
                 <div class="check-row">
-                    <input type="submit" value="Sign Up">
+                    <div class="spacer"> </div>
+                    <label><input type="checkbox" name="Yougood">You is good?</label>
+                </div>
+
+                <fieldset>
+                    <legend>Choose your gender</legend>
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label><input type="radio" name="gender" value="Male">Male</label>
+                        <label><input type="radio" name="gender" value="Female">Female</label>
+                    </div>
+                </fieldset>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="comment"></textarea>
                 </div>
             </fieldset>
+
+            <div class="check-row">
+                <input type="submit" value="Sign Up">
+            </div>
         </form>
+
+        <br>
+        <br>
+        <hr>
+
+        <div>
+            <h2><em>Questions</em></h2>
+
+            <h3>What are some ways to style your form?</h3>
+            <p>I can use box models to line up borders etc. I can also use focus to highlight the textbox the user is using in real time making it easier for them to read. I can also use flex to properly line up everything and then media to properly fit everything on small screen.
+            </p>
+
+            <h3>Why does the professor like to use flex?</h3>
+            <p>Because it's easier to organise...?</p>
+
+            <h3>What makes for a good mobile form?</h3>
+            <p>Something thats easy to read and page fits/is aligned well on the small screen</p>
+        </div>
 
     </main>
     <footer>

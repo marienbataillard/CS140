@@ -1,16 +1,36 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(53, 64, 36);
+    color: aliceblue;
 }
 
-.form-row .check-row {
-    margin: 10px 0;
+form {
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+fieldset{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid beige;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.form-row , .check-row {
+    margin: 10px;
+    padding: 5px;
     display: flex;
     gap: 10px;
 }
 
-.form-row input {
+.form-row input, select {
     padding: 5px;
-    background-color: blanchedalmond;
+    background-color: beige;
 }
 
 .form-row label {
@@ -23,8 +43,13 @@ body {
     text-align: right;
 }
 
+input :focus
+select :focus
+textarea :focus
+
 @media ONLY screen AND (max-width: 500px) {
-    .form-row, .checkrow {
+
+    .form-row, .check-row {
         flex-direction: column;
     }
 
