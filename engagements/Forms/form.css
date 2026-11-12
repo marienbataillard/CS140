@@ -21,11 +21,16 @@ fieldset{
     padding: 20px;
 }
 
+legend {
+    padding: 20px;
+}
+
 .form-row , .check-row {
     margin: 10px;
     padding: 5px;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .form-row input, select {
@@ -38,22 +43,45 @@ fieldset{
     text-align: right;
 }
 
+.comment-row label{
+    width: 150px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.comment-row textarea {
+    flex: 1;
+    min-width: 0;
+}
+
 .spacer {
     width: 150px;
     text-align: right;
 }
 
-input :focus
-select :focus
-textarea :focus
+input:focus, select:focus, textarea:focus {
+    border-color: magenta;
+    background-color: #fff2a8;
+}
 
 @media ONLY screen AND (max-width: 500px) {
 
     .form-row, .check-row {
         flex-direction: column;
+        align-items: stretch;
     }
 
-    .form-row label {
+    .form-row label, .comment-row label {
+        width: auto;
         text-align: left;
+    }
+
+    .form-row input, .form-row select, .comment-row textarea, .check-row checkbox, .check-row radio {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .spacer {
+        display: none;
     }
 }
