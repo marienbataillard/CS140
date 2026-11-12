@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up Page</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <fieldset>
+                    <legend>Account</legend>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="bdate">Birthday:</label>
+                        <input type="date" name="bdate" id="bdate">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="pass" id="password">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="State">State:</label>
+                        <select name="state" id="state">
+                            <option value="blank">---------</option>
+                            <option value="CA">California</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="UT">Utah</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>About You</legend>
+                    <div class="check-row">
+                        <div class="spacer"> </div>
+                        <label><input type="checkbox" name="Yougood">You is good?</label>
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label><input type="radio" name="Male">Male</label>
+                        <label><input type="radio" name="Female">Female</label>
+                    </div>
+
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <label>Comment</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="check-row">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 The Author</p>
+    </footer>
+</body>
+</html>

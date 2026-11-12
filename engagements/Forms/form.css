@@ -1,0 +1,34 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-row .check-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .checkrow {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}
