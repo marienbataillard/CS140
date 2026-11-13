@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header><h1>Mars' Site</h1></header>
+    <main>
+        <form action="fromprocessing.html" method="post">
+            <fieldset>
+                <legend>Accont Information</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name </label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" placeholder="Email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="Birthday">Birthdahy</label>
+                    <input type="date" name="Birthday" placeholder="Email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password </label>
+                    <input type="password" name="pass" id="bdate">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank">--------------</option>
+                        <option value="MEL">Melbourne</option>
+                        <option value="QLD">Queensland</option>
+                        <option value="NT">Northern Territory</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label><input type="checkbox" name="I good"> I am good.</label>
+                </div>
+            
+                <div class="form-row">
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comment"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+
+        <!--
+        <div>
+            <h3>The form tag has an "action" attribute. What does it do?
+            </h3>
+                <p>It specefies where the form data should be sent.</p>
+
+            <h3>The form tag has a "method" attribute. What does it do?</h3>
+                <p>Declares either a post or get request</p>
+
+            <h3>What is the difference between a "POST" and a "GET"?</h3>
+                <p>Post is slightly more secure, since get puts the data in the URL where as post doesnt but still sends the data in a different way. Post is used when we are engaging. Get is used for any type of reading data or for searching.</p>
+
+            <h3>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</h3>
+                <p></p>
+
+            <h3>List all the form controls that HTML5 added. Which ones did you put in your form?</h3>
+                <p>
+                    label
+                    fieldset
+                    legend
+                    datalist
+                    output
+                    progress
+                    meter
+                </p>
+        </div>
+        -->
+    </main>
+    <footer>
+        &copy; 2026 Author.
+    </footer>
+    
+</body>
+</html>
