@@ -1,19 +1,24 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgb(53, 64, 36);
+    background-image: linear-gradient(to bottom,black, rgb(42, 6, 60));
     color: aliceblue;
 }
 
+header { 
+    font-size: xx-large;
+    color: rgb(182, 86, 231);
+}
+
 form {
-    width: 440px;
+    width: 550px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 fieldset{
-    width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     border: 1px solid beige;
     border-radius: 8px;
@@ -25,12 +30,19 @@ legend {
     padding: 20px;
 }
 
-.topsect , .yoursect {
+.topsect , .yousect {
     margin: 10px;
     padding: 5px;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.check {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 5px;
 }
 
 .topsect input, select {
@@ -49,17 +61,37 @@ legend {
     gap: 30px;
 }
 
-.yoursect label{
+.yousect label{
     width: 150px;
     flex-shrink: 0;
     text-align: right;
 }
 
-.yoursect textarea {
+.yousect textarea {
     flex: 1;
     min-width: 0;
 }
 
+#submit {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(96, 27, 133);
+    color: white;
+    font-size: medium;
+}
+
+#submit:hover {
+    background-color: rgb(34, 7, 59);
+    color: white;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    font-size: small;
+    background-color: rgb(38, 15, 51)  ;
+    border-radius: 8px;
+}
 .spacer {
     width: 150px;
     text-align: right;
@@ -70,19 +102,23 @@ input:focus, select:focus, textarea:focus {
     background-color: #fff2a8;
 }
 
-@media ONLY screen AND (max-width: 500px) {
+@media ONLY screen AND (max-width: 550px) {
 
-    .topsect, .yoursect {
+    .topsect, .yousect {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .topsect label, .yoursect label {
+    .topsect label, .yousect label {
         width: auto;
         text-align: left;
     }
 
-    .topsect input, .topsect select, .yoursect textarea{
+    .check {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topsect input, .topsect select, .yousect textarea{
         width: 100%;
         box-sizing: border-box;
     }
