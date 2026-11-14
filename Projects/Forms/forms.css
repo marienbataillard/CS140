@@ -62,7 +62,7 @@ legend {
     gap: 30px;
 }
 
-.yousect label{
+.yousect .question {
     width: 150px;
     flex-shrink: 0;
     text-align: right;
@@ -71,6 +71,20 @@ legend {
 .yousect textarea {
     flex: 1;
     min-width: 0;
+}
+
+.question {
+    width: 150px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.choice {
+    display: flex;
+    gap: 6px;
+    width: auto;
+    align-items: center;
+
 }
 
 #submit {
@@ -111,7 +125,7 @@ input:focus, select:focus, textarea:focus {
         align-items: stretch;
     }
 
-    .topsect label, .yousect label {
+    .topsect label, .yousect .question {
         width: auto;
         text-align: left;
     }
@@ -121,12 +135,13 @@ input:focus, select:focus, textarea:focus {
     }
 
     .topsect input:not([type="checkbox"]):not([type="radio"]), .yousect input, .yousect select, .yousect textarea{
-        width: 100%;
+        width: auto;
         box-sizing: border-box;
     }
 
     #submit {
         width: 100%;
+        padding: 16px;
         box-sizing: border-box;
     }
 
