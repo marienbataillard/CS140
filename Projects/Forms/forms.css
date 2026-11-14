@@ -21,14 +21,19 @@ form {
 fieldset{
     min-width: 0;
     box-sizing: border-box;
-    border: 1px solid beige;
+    border: 2px solid beige;
     border-radius: 8px;
     margin: 20px 0;
     padding: 15px;
 }
 
 legend {
-    padding: 20px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    border: 1px solid #fff2a8;
+    border-radius: 8px;
+    background-color:rgb(247, 247, 244);
+    color: rgb(34, 7, 59);
 }
 
 .topsect , .yousect {
@@ -46,9 +51,10 @@ legend {
     gap: 5px;
 }
 
-.topsect input, select {
-    padding: 5px;
-    background-color: beige;
+input, select, textarea {
+    padding: 10px;
+    background-color: rgb(247, 247, 244);
+    border-radius: 8px;
 }
 
 .topsect label {
