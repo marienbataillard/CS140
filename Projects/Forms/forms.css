@@ -6,6 +6,7 @@ body {
 }
 
 header { 
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
     color: rgb(182, 86, 231);
 }
@@ -91,6 +92,7 @@ footer {
     font-size: small;
     background-color: rgb(38, 15, 51)  ;
     border-radius: 8px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .spacer {
     width: 150px;
@@ -118,7 +120,12 @@ input:focus, select:focus, textarea:focus {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .topsect input, .topsect select, .yousect textarea{
+    .topsect input:not([type="checkbox"]):not([type="radio"]), .yousect input, .yousect select, .yousect textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #submit {
         width: 100%;
         box-sizing: border-box;
     }
