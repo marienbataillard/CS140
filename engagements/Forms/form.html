@@ -11,7 +11,7 @@
         <h1>Sign Up Page</h1>
     </header>
     <main>
-        <form action="formprocessing.html" method="post">
+        <form action="formprocessing.html" method="post" id="myform">
             <fieldset>
                 <legend>Account</legend>
                 <div class="form-row">
@@ -75,20 +75,55 @@
         <div>
             <h2><em>Questions</em></h2>
 
-            <h3>What are some ways to style your form?</h3>
-            <p>I can use box models to line up borders etc. I can also use focus to highlight the textbox the user is using in real time making it easier for them to read. I can also use flex to properly line up everything and then media to properly fit everything on small screen.
-            </p>
+            <h3>>What is Javascript? How did it get it's name?</h3>
+                <p> </p>
 
-            <h3>Why does the professor like to use flex?</h3>
-            <p>Because it's easier to organise...?</p>
+            <h3>What are the two ways you can run javascript?</h3>
+                <p> </p>
 
-            <h3>What makes for a good mobile form?</h3>
-            <p>Something thats easy to read and page fits/is aligned well on the small screen</p>
+            <h3>What is JQuery? Is it still popular today<</h3>
+                <p> </p>
+
+            <h3>What is the most popular front-end js library today/</h3>
+                <p> </p>
+
+            <h3>How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
+                <p> </p>
         </div>
 
     </main>
     <footer>
         <p>&copy; 2026 The Author</p>
     </footer>
+
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const bdate = document.getElementById('bdate').value;
+
+            if (!email) {
+                alert("You need an email!")
+                return; 
+            }
+
+            if (!bdate || bdate < 18) {
+                alert("You need to be older than 18")
+                return;
+            }
+
+            const formData = {
+                email: email,
+                password: password,
+                bdate: bdate,
+            };
+
+            console.log(formData);
+            
+        });
+    </script>
 </body>
 </html>
