@@ -76,20 +76,20 @@
         <div>
             <h2><em>Questions</em></h2>
 
-            <h3>>What is AJAX?</h3>
-                <p>GitHub only allows to upload static pages and theres not much room to save/make databases to hold data. A Synchronis JavaScript and XML
-
-                    javascript goes over the network talking to the service getting data pulling the data down and then updates the page like throug
+            <h3>What is AJAX?</h3>
+                <p>GitHub only allows to upload static pages and theres not much room to save/make databases to hold data. A Synchronis JavaScript and XML .
+                
+                Javascript goes over the network talking to the service getting data pulling the data down and then updates the page like throug
                 </p>
 
             <h3>Why do you put your JS Code in a separate file?</h3>
-                <p> </p>
+                <p>To keep the code more organised. Makes it easier read and edit. Just like how we put the css code in a seperate file. </p>
 
             <h3>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
-                <p> </p>
+                <p> When DevTools is open we can see in the Console if there are any errors show. Usually it will reference the line and error in the file aswell </p>
 
             <h3>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h3>
-                <p>  </p>
+                <p>ID's match. The only error the console shows is the favicon error but nothing else in regards to my javascript.The ID's I used include, myform, email, password, bdate and message</p>
         </div>
 
     </main>
@@ -97,49 +97,6 @@
         <p>&copy; 2026 The Author</p>
     </footer>
 
-    <script>
-        document.getElementById('myform').addEventListener('submit',function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const bdate = document.getElementById('bdate').value;
-
-            if (!email) {
-                alert("You need an email!")
-                return; 
-            }
-
-            if (!bdate || bdate < 18) {
-                alert("You need to be older than 18")
-                return;
-            }
-
-            const formData = {
-                email: email,
-                password: password,
-                bdate: bdate,
-            };
-
-            console.log(formData);
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "submit.json", true);
-            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    //alert('Form submitted successfully.');
-                    message = document.getElementById('message');
-                    const response = JSON.pars(xhr.resonseText);
-                    message.textContent = response.message;
-                    form.reset();
-                    //clears the message
-                    form.textContent = '';
-                } else if (xhr.readyState == 4)
-            }
-
-            
-        });
-    </script>
+    <script src="form.js"> </script>
 </body>
 </html>
