@@ -47,9 +47,10 @@ document.getElementById('myform').addEventListener('submit',function(event) {
                     //clears the message
                     document.getElementById('myform').textContent = '';
                 } else if (xhr.readyState == 4){
-
+                    alert(`Error submitting form.`)
                 }
             };
-            xhr.send();
+            xhr.send(JSON.stringify(formData));
+            alert(`Success!`)
             
         });
