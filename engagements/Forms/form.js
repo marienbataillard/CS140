@@ -51,6 +51,6 @@ document.getElementById('myform').addEventListener('submit',function(event) {
                 }
             };
             xhr.send(JSON.stringify(formData));
-            alert(`Success!`)
+            alert(`Success! You have signed up!`)
             
         });
