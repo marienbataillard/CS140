@@ -4,6 +4,9 @@ document.getElementById('myform').addEventListener('submit',function(event) {
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             const bdate = document.getElementById('bdate').value;
+            const state = document.getElementById('state').value;
+            const blank = document.getElementById('blank').value;
+            const gender = document.getElementById('radio').value;
 
             if (!email) {
                 alert("You need an email!")
@@ -24,6 +27,21 @@ document.getElementById('myform').addEventListener('submit',function(event) {
 
             if (!bdate || age < 18) {
                 alert("You need to be older than 18")
+                return;
+            }
+
+            if (!password) {
+                alert("You need a password!")
+                return;
+            }
+
+            if (!state === !blank) {
+                alert("What state are you from?")
+                return;
+            }
+
+            if (!gender) {
+                alert("Choose your gender")
                 return;
             }
 
