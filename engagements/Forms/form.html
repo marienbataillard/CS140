@@ -11,6 +11,7 @@
         <h1>Sign Up Page</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formprocessing.html" method="post" id="myform">
             <fieldset>
                 <legend>Account</legend>
@@ -75,20 +76,20 @@
         <div>
             <h2><em>Questions</em></h2>
 
-            <h3>>What is Javascript? How did it get it's name?</h3>
-                <p>Programming language that makes web pages interactive. It was renamed Javascript after a marketing move to go off the popularity of Java.</p>
+            <h3>What is AJAX?</h3>
+                <p>GitHub only allows to upload static pages and theres not much room to save/make databases to hold data. A Synchronis JavaScript and XML .
+                
+                Javascript goes over the network talking to the service getting data pulling the data down and then updates the page like throug
+                </p>
 
-            <h3>What are the two ways you can run javascript?</h3>
-                <p>By using the script tag in a web browser or using Node.js </p>
+            <h3>Why do you put your JS Code in a separate file?</h3>
+                <p>To keep the code more organised. Makes it easier read and edit. Just like how we put the css code in a seperate file. </p>
 
-            <h3>What is JQuery? Is it still popular today</h3>
-                <p>Its a library that simplifies common JavaScript tasks. It is still used but it's less popular with new sites/apps</p>
+            <h3>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
+                <p> When DevTools is open we can see in the Console if there are any errors show. Usually it will reference the line and error in the file aswell </p>
 
-            <h3>What is the most popular front-end js library today/</h3>
-                <p>React made from meta </p>
-
-            <h3>How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
-                <p>By using the event preventDefault function, without it the browser would send the data and reload the page before the validation could run.</p>
+            <h3>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</h3>
+                <p>ID's match. The only error the console shows is the favicon error but nothing else in regards to my javascript.The ID's I used include, myform, email, password, bdate and message</p>
         </div>
 
     </main>
@@ -96,34 +97,6 @@
         <p>&copy; 2026 The Author</p>
     </footer>
 
-    <script>
-        document.getElementById('myform').addEventListener('submit',function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const bdate = document.getElementById('bdate').value;
-
-            if (!email) {
-                alert("You need an email!")
-                return; 
-            }
-
-            if (!bdate || bdate < 18) {
-                alert("You need to be older than 18")
-                return;
-            }
-
-            const formData = {
-                email: email,
-                password: password,
-                bdate: bdate,
-            };
-
-            console.log(formData);
-            
-        });
-    </script>
+    <script src="form.js"> </script>
 </body>
 </html>
