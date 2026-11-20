@@ -5,8 +5,10 @@ document.getElementById('myform').addEventListener('submit',function(event) {
             const password = document.getElementById('password').value;
             const bdate = document.getElementById('bdate').value;
             const state = document.getElementById('state').value;
-            const blank = document.getElementById('blank').value;
-            const gender = document.getElementById('radio').value;
+            const checkbox = document.getElementById('checkbox').checked;
+            const male = document.getElementById('male').checked;
+            const female = document.getElementById('female').checked;
+            const comment = document.getElementById('comment').value;
 
             if (!email) {
                 alert("You need an email!")
@@ -35,20 +37,15 @@ document.getElementById('myform').addEventListener('submit',function(event) {
                 return;
             }
 
-            if (!state === !blank) {
-                alert("What state are you from?")
-                return;
-            }
-
-            if (!gender) {
-                alert("Choose your gender")
-                return;
-            }
-
             const formData = {
                 email: email,
                 password: password,
                 bdate: bdate,
+                state: state,
+                checkbox: checkbox,
+                male: male,
+                female: female,
+                comment: comment,
             };
 
             console.log(formData);
